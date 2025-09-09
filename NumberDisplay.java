@@ -40,11 +40,22 @@ public class NumberDisplay
      */
     public String getDisplayValue()
     {
-        if(value < 10) {
-            return "0" + value;
+        int disValue;
+        if(value>12){
+            disValue = value - 12;
         }
+        else if(value==0){
+            disValue=12;
+        }
+        else{
+            disValue = value;
+        }
+        if(value < 10) {
+            return "0" + disValue;
+        }
+            
         else {
-            return "" + value;
+            return "" + disValue;
         }
     }
 

@@ -32,3 +32,14 @@ Note: This project does not implement adequate handling of errors.
 clock at a custom time using setTime with the values the user passed through the parameters.
 27. because it calls setTime which calls updateDisplay, theres no need to do it twice
 28. p1.print("essay.txt",True);,p1.getStatus(30)
+29. Square,Triangle,Circle
+30. moveHorizontal, changeSize, moveVertical, etc
+31. no
+32. 2
+33. it gives negative remainders
+34. 0,1,2,3,4,-1,-2,-3,-4
+35. -m to m exculsively
+36. you would need to change the number class for the hour to roll over when it goes over the limit
+and roll over to 1 instead of 0
+37. it is better to change the display, as that is easier to implement and can be reverted to a 24h clock
+ much easier. it also avoids needing different NumberDisplay classes for hours and minutes.
